@@ -1,2 +1,2 @@
-# project0
-CS50W Project0 Basic HTML/CSS
+# Project 0
+Web Programming with Python and JavaScript
