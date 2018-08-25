@@ -1,0 +1,47 @@
+$padding: 3px;
+$color: #4CAF50;
+
+%extend-example {
+    font-weight: bold;
+}
+
+#pbold {
+    @extend %extend-example;
+}
+
+.important {
+    @extend %extend-example;
+    color: brown;
+}
+
+table { 
+    border-collapse: collapse;
+    width: 100%;
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    } 
+    
+    td, th {
+    text-align: left;
+    } 
+
+    th {
+    background-color: $color;
+    color: white;
+    }
+}
+
+table, td, th {
+    border: 1px solid gray;
+    padding: $padding;
+}
+
+ol > li {
+    padding: $padding;
+}
+
+
+@media only screen and (min-width: 576px) {
+    table {width: 50%};
+}
